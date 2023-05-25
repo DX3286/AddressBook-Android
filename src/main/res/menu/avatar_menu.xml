@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/avatarMenu_choose"
+        android:title="選擇照片"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/avatarMenu_photo"
+        android:title="拍攝照片"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/avatarMenu_clear"
+        android:title="清除照片"
+        app:showAsAction="always" />
+
+</menu>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_name">
+        <item>安娜</item>
+        <item>麗莎</item>
+        <item>傑克</item>
+        <item>吉米</item>
+        <item>湯姆</item>
+    </string-array>
+
+    <string-array name="array_age">
+        <item>19</item>
+        <item>19</item>
+        <item>17</item>
+        <item>20</item>
+        <item>18</item>
+    </string-array>
+
+    <string-array name="array_birth">
+        <item>2000/1/8</item>
+        <item>2000/2/16</item>
+        <item>2001/12/27</item>
+        <item>1998/9/4</item>
+        <item>2000/10/10</item>
+    </string-array>
+
+    <string-array name="array_mobile">
+        <item>0912345678</item>
+        <item>0912345678</item>
+        <item>2000/12/27</item>
+        <item>2000/9/4</item>
+        <item>2000/10/10</item>
+    </string-array>
+
+</resources>

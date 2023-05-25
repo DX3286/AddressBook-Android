@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:descendantFocusability="blocksDescendants" >
+
+    <item
+        android:id="@+id/menu_settings"
+        android:icon="@drawable/menu"
+        android:title="設定"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/menu_reload"
+                android:orderInCategory="1"
+                android:title="重新整理"
+                app:showAsAction="always" />
+
+            <item
+                android:id="@+id/menu_default"
+                android:orderInCategory="2"
+                android:title="讀取預設"
+                app:showAsAction="always" />
+
+            <item
+                android:id="@+id/menu_delete_all"
+                android:orderInCategory="3"
+                android:title="刪除所有資料"
+                app:showAsAction="always" />
+
+            <item
+                android:id="@+id/menu_info"
+                android:orderInCategory="4"
+                android:title="關於"
+                app:showAsAction="always" />
+        </menu>
+    </item>
+</menu>

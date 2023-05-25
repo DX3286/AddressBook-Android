@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:foreground="@drawable/view_round_border"
+    android:background="@color/colorMain" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="8dp" >
+
+        <ImageView
+            android:id="@+id/img_avatar"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:foreground="@drawable/rounded_cor"
+            android:src="@drawable/avatar" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical" >
+
+            <TableRow>
+                <TextView
+                    style="@style/txt_title_style"
+                    android:text="姓名：" />
+
+                <TextView
+                    android:id="@+id/_name"
+                    android:layout_weight="1"
+                    style="@style/txt_style" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    style="@style/txt_title_style"
+                    android:text="生日：" />
+
+                <TextView
+                    android:id="@+id/_birth"
+                    android:layout_weight="1"
+                    style="@style/txt_style" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    style="@style/txt_title_style"
+                    android:text="年齡：" />
+
+                <TextView
+                    android:id="@+id/_age"
+                    android:layout_weight="1"
+                    style="@style/txt_style" />
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+
+    <View
+        style="@style/divider"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="4dp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="8dp" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_weight="1" >
+
+                <TextView
+                    style="@style/txt_title_style"
+                    android:layout_gravity="center_vertical"
+                    android:text="手機號碼：" />
+
+                <TextView
+                    android:id="@+id/_mobile"
+                    style="@style/txt_style" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btn_call_mobile"
+                android:layout_width="32dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:background="@drawable/edittext_round_border"
+                android:src="@android:drawable/ic_menu_call" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_weight="1" >
+
+                <TextView
+                    style="@style/txt_title_style"
+                    android:layout_gravity="center_vertical"
+                    android:text="住家電話：" />
+
+                <TextView
+                    android:id="@+id/_home"
+                    style="@style/txt_style" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btn_call_home"
+                android:layout_width="32dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:background="@drawable/edittext_round_border"
+                android:src="@android:drawable/ic_menu_call" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_weight="1" >
+
+                <TextView
+                    style="@style/txt_title_style"
+                    android:layout_gravity="center_vertical"
+                    android:text="住家地址：" />
+
+                <TextView
+                    android:id="@+id/_address"
+                    style="@style/txt_style" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btn_map_home"
+                android:layout_width="32dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/edittext_round_border"
+                android:padding="2dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/marker" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_weight="1" >
+
+                <TextView
+                    style="@style/txt_title_style"
+                    android:text="電子郵件：" />
+
+                <TextView
+                    android:id="@+id/_mail"
+                    style="@style/txt_style" />
+
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_weight="1" >
+
+                <TextView
+                    style="@style/txt_title_style"
+                    android:text="相關網站：" />
+
+                <TextView
+                    android:id="@+id/_web"
+                    style="@style/txt_style" />
+
+            </LinearLayout>
+        </TableRow>
+
+    </TableLayout>
+
+
+
+
+
+</LinearLayout>

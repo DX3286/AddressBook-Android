@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMain"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".EditActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/edit_Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorMain"
+        app:navigationIcon="@android:drawable/ic_menu_revert"
+        android:elevation="8dp"
+        app:title="@string/app_name">
+
+        <ImageButton
+            android:id="@+id/editBtn_confirm"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="end"
+            android:adjustViewBounds="true"
+            android:background="@color/colorMainTrans"
+            android:scaleType="centerInside"
+            android:src="@drawable/confirm" />
+
+        <ImageButton
+            android:id="@+id/editBtn_delete"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="end"
+            android:layout_marginRight="4dp"
+            android:adjustViewBounds="true"
+            android:background="@color/colorMainTrans"
+            android:scaleType="fitCenter"
+            android:src="@android:drawable/ic_delete" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        style="@style/divider"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageButton
+            android:id="@+id/editBtn_avatar"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_margin="8dp"
+            android:adjustViewBounds="true"
+            android:background="#00FFFFFF"
+            android:scaleType="fitCenter"
+            android:foreground="@drawable/rounded_cor"
+            android:src="@drawable/avatar" />
+
+        <EditText
+            style="@style/editTxt_style_wBorder"
+            android:id="@+id/editET_name"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="4dp"
+            android:inputType="text"
+            android:paddingLeft="8dp"
+            android:textStyle="bold"
+            android:hint="姓名" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarThumbVertical="@null"
+        android:scrollbarThumbHorizontal="@null"
+        android:paddingVertical="4dp"
+        android:background="@drawable/view_round_border" >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="8dp" >
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:text="生日"
+                    android:textSize="18sp"/>
+
+                <EditText
+                    style="@style/editTxt_style_woBorder"
+                    android:id="@+id/editET_birth"
+                    android:layout_gravity="center_vertical"
+                    android:hint="選擇生日"
+                    android:focusable="false" android:clickable="true" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:text="年齡"
+                    android:textSize="18sp"/>
+
+                <EditText
+                    style="@style/editTxt_style_woBorder"
+                    android:id="@+id/editET_age"
+                    android:layout_gravity="center_vertical"
+                    android:inputType="number"
+                    android:maxLength="3" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:text="手機號碼"
+                    android:textSize="18sp"/>
+
+                <EditText
+                    style="@style/editTxt_style_woBorder"
+                    android:id="@+id/editET_mobile"
+                    android:layout_gravity="center_vertical"
+                    android:inputType="phone" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:text="住家電話"
+                    android:textSize="18sp"/>
+
+                <EditText
+                    style="@style/editTxt_style_woBorder"
+                    android:id="@+id/editET_home"
+                    android:layout_gravity="center_vertical"
+                    android:inputType="phone" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:text="住家地址"
+                    android:textSize="18sp"/>
+
+                <EditText
+                    style="@style/editTxt_style_woBorder"
+                    android:id="@+id/editET_address"
+                    android:layout_gravity="center_vertical"
+                    android:inputType="text" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:text="電子郵件"
+                    android:textSize="18sp"/>
+
+                <EditText
+                    style="@style/editTxt_style_woBorder"
+                    android:id="@+id/editET_mail"
+                    android:layout_gravity="center_vertical"
+                    android:inputType="textEmailAddress" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:text="相關網站"
+                    android:textSize="18sp"/>
+
+                <EditText
+                    style="@style/editTxt_style_woBorder"
+                    android:id="@+id/editET_web"
+                    android:layout_gravity="center_vertical"
+                    android:inputType="text" />
+            </TableRow>
+
+        </TableLayout>
+
+    </ScrollView>
+
+</LinearLayout>

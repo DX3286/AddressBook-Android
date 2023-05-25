@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorMain"
+    tools:context=".MainActivity" >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/main_Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorMain"
+        android:elevation="8dp"
+        app:title="@string/app_name" >
+
+        <ImageButton
+            android:id="@+id/mainBtn_search"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="end"
+            android:adjustViewBounds="true"
+            android:background="@color/colorMainTrans"
+            android:scaleType="centerInside"
+            android:src="@android:drawable/ic_menu_search"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+
+        <LinearLayout
+            android:id="@+id/main_searchView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:background="@drawable/edittext_round_border"
+            android:visibility="gone" >
+
+            <EditText
+                android:id="@+id/mainET_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:gravity="start|center_vertical"
+                android:background="@null"
+                android:hint="搜尋聯絡人" />
+
+            <ImageButton
+                android:id="@+id/mainBtn_closeSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="10dp"
+                android:adjustViewBounds="true"
+                android:background="@color/colorMainTrans"
+                android:scaleType="centerInside"
+                android:src="@android:drawable/ic_menu_close_clear_cancel"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        style="@style/divider"/>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" >
+
+        <ListView
+            android:id="@+id/main_listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:dividerHeight="4dp"
+            android:divider="@color/colorMainTrans" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/main_fab_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="12dp"
+            app:borderWidth="0dp"
+            app:backgroundTint="@color/colorMainDarker"
+            android:elevation="24dp"
+            android:src="@android:drawable/ic_input_add"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>
